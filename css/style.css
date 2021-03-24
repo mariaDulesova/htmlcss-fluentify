@@ -15,7 +15,11 @@ p {
     font-size: 13px;
     color: rgb(88, 88, 88);
     line-height: 17px;
-   
+}
+
+footer{
+    position: relative;
+    line-height: 100px;
 }
 
 .container {
@@ -56,7 +60,7 @@ p {
 
 .w-50 {
     width: calc(100%/2);
-    padding: 50px;
+    padding: 0 30px;
 }
 
 .w-33 {
@@ -66,10 +70,19 @@ p {
     text-align: center;
 }
 
+.row:after{
+    content: " ";
+    display: block;
+    width: 95%;
+    height: 1px;
+    background-color: rgb(199, 199, 199);
+    margin: 25px auto;
+}
+
 
 .btn{
     display: inline-block;
-    padding: 5px 5px;
+    padding: 2px;
     font-size: 10px;
     line-height: 20px;
     color: white;
@@ -99,7 +112,7 @@ p {
 }
 
 .gray-area{
-    height: 100px;
+    height: 110px;
     background-color: lightgray;
 }
 
@@ -183,9 +196,9 @@ h3{
 .header-green:after{
     content: " ";
     display: block;
-    width: 80px;
+    width: 40px;
     height: 2px;
-    background-color: rgb(165, 165, 165);
+    background-color: rgb(199, 199, 199);
     margin: 20px auto 0;
 } 
 
@@ -194,5 +207,25 @@ h3{
 }
 .w-50 a{
     font-size: 12px;
+}
+
+
+/* footer */
+
+
+.btn-help{
+    position: fixed;
+    bottom:0;
+    left: 75%;
+}
+
+.txt-underline-solid{
+    border-bottom: 1px solid rgb(146, 145, 145);
+}
+.txt-underline-none{
+    border-bottom:1px solid rgb(146, 145, 145, 0);
+}
+.down-pointing-small-triangle{
+    padding-left: 50px;
 }
 
